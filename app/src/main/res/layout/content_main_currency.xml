@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:name="com.cryptobuddy.ryanbridges.cryptobuddy.currencylist.AllCurrencyListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:layout="@layout/fragment_main_currency"
+    android:orientation="vertical"
+    android:weightSum="5">
+
+    <fragment
+        android:id="@+id/fragment_amount"
+        android:name="com.cryptobuddy.ryanbridges.cryptobuddy.MainCurrencyActivityFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout="@layout/fragment_main_currency" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.cryptobuddy.ryanbridges.cryptobuddy.currencylist.AllCurrencyListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:layout="@layout/fragment_all_currency_list" />
+
+</LinearLayout>
+
