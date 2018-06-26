@@ -129,7 +129,8 @@
             app:layout_constraintBottom_toTopOf="@+id/currencyListCoinImageView"
             app:layout_constraintEnd_toStartOf="@+id/currencyListfullNameTextView"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="invisible"/>
 
 
     </android.support.constraint.ConstraintLayout>
